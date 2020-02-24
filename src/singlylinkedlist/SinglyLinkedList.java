@@ -36,4 +36,13 @@ public class SinglyLinkedList {
 
         }
     }
+
+    public void traverse() {
+        System.out.println("Printing LinkedList");
+        Node temp = head;
+        while (temp != null) {
+            System.out.print(temp.getData() + " ");
+            temp = temp.getNext();
+        }
+    }
 }
