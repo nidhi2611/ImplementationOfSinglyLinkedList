@@ -9,5 +9,12 @@ public class Node {
         next = null;
     }
 
+    public int getData() {
+        return data;
+    }
+
+    public void setData(int data) {
+        this.data = data;
+    }
 
 }
