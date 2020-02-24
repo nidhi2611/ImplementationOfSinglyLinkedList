@@ -7,5 +7,9 @@ public class Main {
         SinglyLinkedList singlyLinkedList = new SinglyLinkedList();
         singlyLinkedList.insertAtBeginning(10);
         singlyLinkedList.insertAtEnd(20);
+        singlyLinkedList.traverse();
+        singlyLinkedList.insertAtEnd(50);
+        singlyLinkedList.insertAtBeginning(0);
+        singlyLinkedList.traverse();
     }
 }
