@@ -13,4 +13,16 @@ public class SinglyLinkedList {
         return head;
     }
 
+    public void insertAtEnd(int data) {
+        Node node = new Node(data);
+        if (head == null)
+            head = node;
+        else {
+            Node temp = head;
+            while (temp.getNext() != null) {
+                temp = temp.getNext();
+            }
+            temp.setNext(node);
+        }
+    }
 }
