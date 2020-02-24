@@ -25,4 +25,15 @@ public class SinglyLinkedList {
             temp.setNext(node);
         }
     }
+
+    public void insertAtBeginning(int data) {
+        Node node = new Node(data);
+        if (head == null) {
+            head = node;
+        } else {
+            node.setNext(head);
+            head = node;
+
+        }
+    }
 }
