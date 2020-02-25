@@ -46,4 +46,18 @@ public class SinglyLinkedList {
         }
         System.out.println();
     }
+
+    public int deleteFromEnd() {
+        if (head != null) {
+            Node temp = head;
+            while (temp.getNext() != null) {
+                temp = temp.getNext();
+            }
+            return temp.getData();
+        } else {
+            System.out.println("Element cannot be deleted.Linked lIST is EMPTY");
+            return 0;
+        }
+    }
+
 }
