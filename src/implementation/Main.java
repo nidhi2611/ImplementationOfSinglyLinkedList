@@ -13,10 +13,11 @@ public class Main {
         singlyLinkedList.traverse();
         singlyLinkedList.deleteFromEnd();
         singlyLinkedList.deleteFromEnd();
-        singlyLinkedList.deleteFromEnd();
-        singlyLinkedList.deleteFromEnd();
-        singlyLinkedList.deleteFromEnd();
-        singlyLinkedList.deleteFromEnd();
+        singlyLinkedList.traverse();
+        singlyLinkedList.insertAtBeginning(80);
+        singlyLinkedList.insertAtEnd(60);
+        singlyLinkedList.traverse();
+        singlyLinkedList.deleteFromFront();
         singlyLinkedList.traverse();
     }
 }
