@@ -11,5 +11,12 @@ public class Main {
         singlyLinkedList.insertAtEnd(50);
         singlyLinkedList.insertAtBeginning(0);
         singlyLinkedList.traverse();
+        singlyLinkedList.deleteFromEnd();
+        singlyLinkedList.deleteFromEnd();
+        singlyLinkedList.deleteFromEnd();
+        singlyLinkedList.deleteFromEnd();
+        singlyLinkedList.deleteFromEnd();
+        singlyLinkedList.deleteFromEnd();
+        singlyLinkedList.traverse();
     }
 }

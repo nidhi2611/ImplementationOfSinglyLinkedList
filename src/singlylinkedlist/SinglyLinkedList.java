@@ -47,22 +47,32 @@ public class SinglyLinkedList {
         System.out.println();
     }
 
-    public int deleteFromEnd() {
+    public void deleteFromEnd() {
         int response;
         if (head != null) {
             Node temp = head;
             Node previous = null;
             while (temp.getNext() != null) {
-                temp = temp.getNext();
                 previous = temp;
+                temp = temp.getNext();
             }
-            response = temp.getData();
-            previous.setNext(null);
+            System.out.println(temp.getData());
+            if (previous != null)
+                previous.setNext(null);
+            else
+                head = null;
         } else {
             System.out.println("Element cannot be deleted.Linked lIST is EMPTY");
-            response = 0;
         }
-        return response;
+    }
+
+    public void deleteFromFront() {
+        if (head == null) {
+            System.out.println("LINKED LIST EMPTY.CANNOT BE DELETED");
+        } else {
+            System.out.println(head.getData());
+            head = head.getNext();
+        }
     }
 
 }
